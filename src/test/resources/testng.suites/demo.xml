@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo suite" parallel="tests" thread-count="7">
+    <test name="Calculator test">
+        <groups>
+            <run>
+                <include name="simpleOperationGroup"/>
+                <include name="geometricsOperationGroup"/>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="CosinusTest"/>
+            <class name="CatangensTest"/>
+            <class name="DivNumbersTest"/>
+            <class name="MultNumbersTest"/>
+            <class name="NegativeMethodTest"/>
+            <class name="PositiveMethodTest"/>
+            <class name="PowNumbersTest"/>
+            <class name="SinusTest"/>
+            <class name="SqrtNumbersTest"/>
+            <class name="SubNumbersTest"/>
+            <class name="SumNumbersTest"/>
+            <class name="TangensTest"/>
+        </classes>
+
+    </test>
+
+</suite>
